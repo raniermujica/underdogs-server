@@ -6,9 +6,9 @@ PrestaShop y WooCommerce. Sin embargo me propuse esta vez desarrollar mi propia 
 
 ### <b>Api REST</b>
 
-El primer paso será desarrollar al completo toda la estructura del servidor escrita con JavaScript. Para ésto usaré Node.JS y trabajaré con Mongo como base de datos. Para completar el desarrollo de la API utilizaré Express.
+El primer paso será desarrollar al completo toda la estructura del servidor escrita con <b>JavaScript</b>. Para ésto usaré <b>Node.JS</b> y trabajaré con <b>Mongo</b> como base de datos. La autenticación en la aplicación se realizará a través de <b>JWT</b> y la seguridad en el almacenamiento de datos lo conseguiré utilizando la función de hashing de contraseña de <b>Bcrypt</b>. Para completar el desarrollo de la API utilizaré <b>Express</b>.
 
 ### <b>Estructura del Frontend</b>
 
-Para trabajar la estructura desde el área del cliente utilizaré React y Axios para realizar peticiones a la Api. Para conseguir que la aplicación sea completamente dinámica utilizaré el paquete React Router DOM y por último todo el diseño y la maquetación la realizaré utilizando CSS, Bootstrap y Tailwind, siendo la primera vez que desarrolle un proyecto utilizando éste paquete de CSS.
+Para trabajar la estructura desde el área del cliente utilizaré <b>React</b> y <b>Axios</b> para realizar peticiones a la Api. Para conseguir que la aplicación sea completamente dinámica utilizaré el paquete <b>React Router DOM</b> y por último todo el diseño y la maquetación la realizaré utilizando <b>CSS</b>, <b>Bootstrap</b> y <b>Tailwind</b>, siendo la primera vez que desarrolle un proyecto utilizando éste paquete de CSS.
 
