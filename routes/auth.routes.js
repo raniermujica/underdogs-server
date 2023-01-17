@@ -7,9 +7,9 @@ const isAuthenticated = require("../middlewares/auth.middlewares");
 //POST "api/auth/signup" --- Ruta para registrar usuario
 router.post("/signup", async (req, res, next) => {
     console.log(req.body)
-    const { firstname, lastname, email, password } = req.body
+    const { firstName, lastName, email, password } = req.body
     
-    if(!email || !password || !firstname || !lastname) {
+    if(!email || !password || !firstName || !lastName) {
         res.status(400).json({errorMessage: "Debe completar todos los campos"})
         return;
     }
@@ -37,8 +37,8 @@ try {
     const hashPassword = await bcrypt.hash(password, salt)
     
     const newUser = {
-        firstname: firstname,
-        lastname: lastname,
+        firstName: firstName,
+        lastName: lastName,
         email: email,
         password: hashPassword
     }
@@ -81,9 +81,15 @@ router.post("/login", async (req, res, next) => {
         const payload = {
             _id: foundUser._id,
             email: foundUser.email,
-            firstname: foundUser.firstname,
-            lastname: foundUser.lastname,
-            role: foundUser.role
+            firstname: foundUser.firstName,
+            lastname: foundUser.lastName,
+            role: foundUser.role,
+            address: foundUser.address,
+            apartment: foundUser.apartment,
+            city: foundUser.city,
+            zipCode: foundUser.zipCode,
+            phone: foundUser.phone,
+            addressDetails: foundUser.adressDetails
         }
 
         const authToken = jwt.sign(
