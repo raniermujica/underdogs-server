@@ -1,4 +1,4 @@
-![Imagen portada](https://github.com/raniermujica/underdogs-server/blob/master/assets/Home%20muestra%201.png)
+![Imagen portada](https://github.com/raniermujica/underdogs-server/blob/master/assets/home-muestra-1.png)
 
 ## <b>¿Qué es Underdogs?</b>
 
